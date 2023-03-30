@@ -1,0 +1,702 @@
+.container{
+    background-color: white;
+    color: black;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    height: 60px;
+    width: 100%;
+}
+.list{
+    /* float: left; */
+    display: inline-block;
+}
+.list ul{
+    margin-left: 160px;
+   display: flex;
+   list-style: none;
+   margin-top: 20px;
+   
+}
+.list ul li{
+    margin-inline:5px;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    font-size: small;
+   
+}
+.list ul li:hover{
+   font-weight: 900;
+   font-size:large;
+   font-family: sans-serif;
+   margin-top: -5px;
+   cursor: pointer;
+}
+.cartnum{
+    background-color:  hsl(26, 100%, 55%) ;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    margin-top: -540px;
+    margin-left: 1010px;
+    /* display: none; */
+}
+#cnum{
+    color:white;
+    text-align: center;
+    font-size: x-small;
+    float: right;
+    margin-top: -540px;
+    margin-right: 332px;
+    
+}
+.cart{
+    float: right;
+    margin-right: 220px;
+    cursor: pointer;
+}
+.cart svg{
+    margin-bottom:15px;
+    margin-right: 50px;
+}
+.cart img{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+}
+hr{
+    width: 70%;
+    margin-top: 0px;
+}
+#svg{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(181, 39, 39);
+  
+}
+#svg2{
+    
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-left: 14px;
+   
+}
+#empty{
+
+    float: right;
+    margin-right: 180px;
+    border: 1px solid black;
+    box-shadow:  -3px 1px 3px 4px rgba(0,0,0, 0.5 );
+    margin-top: -500px;
+    max-height: 40%;
+    height: 27vh; 
+    width: 18%;
+    background-color:white;
+    position: relative;
+    z-index: 1;
+
+}
+#empty2{
+   margin: 40px;
+    
+}
+#cart-shoe{
+    margin-top: -50px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+}
+#fill{
+    margin-top: -40px;
+    margin-left: 15px;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+#cart-amount{
+    margin-left: 15px;
+    font-size: 11px;
+}
+#x{
+    margin-left: 58px;
+    font-size: 11px;
+    margin-top: -12px
+}
+#carttimes{
+    margin-left: 68px;
+    font-size: 11px;
+    margin-top: -12px
+}
+#total{
+    margin-left: 77px;
+    font-size: 11px;
+    margin-top: -12px;
+    font-weight: bold;
+}
+.cart2{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+#delete{
+    margin-left: 150px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+#check{
+    width: 140%;
+    height: 5vh;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    margin-top: 19px;
+    margin-left: -35px;
+    border-radius: 5px;
+    color: white;
+}
+.hr{
+    margin-top: 20px;
+    width: 100%;
+    color: gray;
+}
+.empty2{
+    margin: 50px;
+    font-size: small;
+}
+#lightbox{
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    cursor: pointer;
+
+}
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.images{
+    width: 25%;
+    height: 25%;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-left: 270px;
+}
+#shoeimage{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#shoeimage img{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+}
+#divv{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    /* background-color: purple; */
+    position: relative;;
+}
+#shoess{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-inline: 70px;
+}
+/* .move{
+    width: 30px;
+    height: 30px;
+} */
+#shoess img{
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    margin-inline: 15px;
+    justify-content: space-between;
+}
+#shoess img:hover{
+filter: grayscale(100%);
+}
+#shoess img:active{
+    filter: grayscale(100%);   
+}
+#img1{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+#shoe2{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+    display: none;
+}
+#shoe3{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+    display: none;
+}
+#shoe4{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+    display: none;
+}
+
+ .smallshoes img{
+    width: 19.5%;
+    height: 19.5%;
+    border-radius: 10px;
+    margin-inline: 6px;
+    /* filter: grayscale(100%); */
+}
+.images .smallshoes{
+    margin-left: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.smallshoes img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    /* border: 1px solid orange; */
+}
+.sneakers{
+    width: 35%;
+    height: 40%;
+    float: right;
+    margin-top: -29%;
+    margin-right: 130px;
+}
+.scompany{
+    color: hsl(26, 100%, 55%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.fall{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.low{
+    font-size: small;
+    color: hsl(220, 14%, 75%);
+    width: 85%;
+    height: 70px;
+    line-height: 20px;
+}
+.amount .price{
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.amount .percent{
+    color:hsl(26, 100%, 55%);
+    width: 35px;
+    height: 20px;
+    text-align: center;
+    background-color: hsl(25, 100%, 94%);
+    margin-left: 110px;
+    margin-top: -25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mainamount{
+    font-size: small;
+    color:  hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+.sign ul{
+    background-color: hsl(223, 64%, 98%);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    height: 40px;
+    margin-bottom: -25px;
+}
+.sign ul li{
+    margin-left: -30px;
+    margin-top: 5px;
+}
+.sign ul .minus{
+    margin-right: 20px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.sign ul .plus{
+    margin-left: 20px;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.sign ul #num{
+    margin-left: 2px;
+}
+.add{
+    width: 45%;
+    height: 7vh;
+    background-color:  hsl(26, 100%, 55%) ;
+    margin-left: 120px;
+   margin-top: -60px;
+    border-radius: 10px;
+    border: none;
+}
+.add svg{
+    color: white;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.add2{
+    margin-right: 40px;
+    float: right;
+    margin-top: 5px;
+    font-size: small;
+    color: white;
+}
+#add2{
+    cursor: pointer;
+    /* margin-bottom: 70px; */
+}
+#prevv{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    margin-top:180px;
+    margin-left: 40px;
+    position: absolute;   
+    /* z-index: 10; */
+}
+#prev{
+    margin-top:12px;
+    margin-left: 10px;
+    display: none;
+}
+#nextt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    margin-top:180px;
+    margin-left: 435px;
+    position: absolute;   
+    /* z-index: 10; */
+}
+#next{
+    margin-top:12px;
+    margin-left: 14px;
+    display: none;
+}
+ #close{
+    display: none;
+    margin-bottom: 500px;
+    margin-left: -70px;
+    color: white;
+
+ }
+ #menu{
+    display: none;
+ }
+@media screen and (max-width: 1115px) {
+
+    .list ul{
+        margin-left: 110px;
+        /* color: red; */
+    
+    }
+    .images{
+        width: 25%;
+        height: 25%;
+        margin-top: 50px;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1107px) {
+
+    .images{
+        margin-left: 200px;
+    }
+    .smallshoes img{       
+        margin-inline: 3px;
+    }
+    .images .smallshoes{
+        margin-left: 15px;
+
+    }
+   
+}
+@media screen and (max-width: 1080px) {
+
+    .add svg{
+        margin-left: 20px;       
+    }
+    .add2{
+        margin-right: 30px;       
+    }
+    .sneakers{
+        
+        margin-top: -32%;      
+    }
+   
+}
+
+@media screen and (max-width: 1052px) {
+    .cart{
+        float: right;
+        margin-right: 190px;
+        cursor: pointer;
+    }
+    .list ul{
+        margin-left: 80px;
+        /* color: red; */
+    
+    }
+    .images{
+        margin-left: 170px;
+        margin-top: 90px;
+    }
+}
+@media screen and (max-width: 1005px) {
+    .low{
+        font-size: small;
+        color: hsl(220, 14%, 75%);
+        width: 100%;
+        height: 70px;
+        line-height: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .list ul{
+        margin-left: 50px;
+        color: red;   
+    }
+    .list ul li{
+        margin-inline:0px;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        font-size: small;
+       
+    }
+    hr{
+        margin-left: 100px;
+        width: 70%;
+    }
+    .images{
+        margin-left: 130px;
+        /* margin-top: 90px; */
+    }
+    .sneakers{       
+        margin-right: 170px;     
+        /* margin-top: -34%;   */
+    }
+    .fall{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .add{
+        width: 40%;
+        height: 5vh;
+        background-color:  hsl(26, 100%, 55%) ;
+        margin-left: 120px;
+       margin-top: -60px;
+        border-radius: 10px;
+        border: none;
+    }
+    .add svg{
+        margin-left: -10px;       
+    }
+    .add2{
+        margin-right: 20px;       
+    }
+    .sign ul{
+        height: 30px;
+        margin-bottom: -15px;
+    }
+   
+}
+@media screen and (max-width: 902px) {
+    #menu{
+        display: inline-block;
+    }
+    .list ul #sneak{
+        display: inline-block;
+    }
+    /* .sneakers{       
+        margin-right: 10px;     
+        /* margin-top: -34%;   */
+    
+    .list ul li{
+        /* float: left; */
+        display: none;
+        color: blue;
+    }
+}
+@media screen and  (max-width: 450px){
+    #menu{
+        display: inline-block ;
+        /* width: 90px;
+        height: 90px; */
+        margin-top: 5px;
+        margin-left: 40px;
+        /* background-color: black; */
+    }
+    hr{
+
+        width: 100%;
+        margin-left:0px;
+        margin-bottom: 32px;
+    }
+    .list ul #sneak{
+        display: inline-block;
+        color: black;
+        font-weight: bolder;
+        font-size: xx-large;
+        margin-left: -70px;
+        margin-bottom: 70px;
+        margin-top: -20px;
+        
+    }
+   
+    #face{
+        width: 35px;
+        height: 35px;
+        float: right;
+         margin-right: -150px;
+    }
+    #cart{
+        float: right;
+        margin-top: 10px;
+        margin-right: -90px;
+    }
+
+    #shoeimage #shoe1{
+        width:470px;
+        height: 300px;
+        border-radius: 0px;
+        margin-left: -150px;
+        margin-top: -92px;
+    }
+    #smallshoes{
+        display: none;
+    }
+    .sneakers{       
+        margin-right: -10px;     
+        margin-top: 20px;  
+        width: 100%;
+        height: auto;
+    }
+    .scompany{
+        font-size: larger;
+    }
+    .fall{
+        font-weight: bolder;
+        font-size: 35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .br{
+        display: none;
+    }
+    .low{
+        font-size: x-large;
+        line-height: 30px;
+        margin-bottom: 50px;
+        margin-top: -20px;
+    }
+    .amount .price{
+        font-weight: bolder;
+        font-size: 40px;
+        
+    }
+    .amount .percent{
+        width: 65px;
+        height: 30px;
+        margin-left: 160px;
+        margin-top: -35px;
+        font-weight: bolder;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .mainamount{
+         margin-left: 150px;
+        float: right;
+        margin-top: -40px;
+        margin-right: 20px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .amount{
+        margin-top:0px;
+        margin-bottom: 20px;
+    }
+    .sign ul{
+        
+        width: 80%;
+        height: 50px;
+        margin-bottom: 55px;
+        margin-left: 20px;
+    }
+    .sign ul .minus{
+        font-weight: bolder;
+        font-size: 50px;
+        cursor: pointer;
+        /* margin-bottom: 20px; */
+    }
+    .sign ul .plus{
+        font-size: 50px;
+        margin-left: 20px;
+        color: hsl(26, 100%, 55%);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .sign ul #num{
+        font-size: 30px;
+        margin-left: 2px;
+        margin-top: 20px;
+    }
+    .add{
+        width: 85%;
+        height: 8vh;
+        margin-left: 30px
+    }
+    .add svg{
+        color: white;
+        margin-left: 90px;
+        margin-top: 5px;
+        /* width: 20%;
+        height: 30%; */
+    }
+    .add2{
+        margin-right: 90px;
+        /* float: right; */
+        margin-top: 5px;
+        font-size: large;
+        color: white;
+    }
+}
